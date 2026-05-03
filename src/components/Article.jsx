@@ -1,10 +1,10 @@
 function Article(props) {
   return (
-    <div>
+    <article>
       <h3>{props.title}</h3>
-      <small>{props.date}</small>
+      <small>{props.date || "No date provided"}</small>
       <p>{props.preview}</p>
-    </div>
+    </article>
   );
 }
 

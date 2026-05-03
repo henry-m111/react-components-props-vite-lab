@@ -2,18 +2,17 @@ import Article from "./Article";
 
 function ArticleList(props) {
   return (
-    <div>
+    <main>
       <h2>Articles</h2>
-
-      {props.articles && props.articles.map((article, index) => (
+      {props.articles.map((article) => (
         <Article
-          key={index}
+          key={article.id}
           title={article.title}
           date={article.date}
           preview={article.preview}
         />
       ))}
-    </div>
+    </main>
   );
 }
 

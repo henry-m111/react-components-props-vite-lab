@@ -1,9 +1,9 @@
 function About(props) {
   return (
-    <div>
-      <h2>About Me</h2>
+    <aside>
+      <img src={props.image || "default-logo.png"} alt="blog logo" />
       <p>{props.about}</p>
-    </div>
+    </aside>
   );
 }
 
